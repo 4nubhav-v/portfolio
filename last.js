@@ -1,5 +1,4 @@
 const API_URL = "https://4nubhav.vercel.app/api/getTrack";
-// const API_URL = "http://localhost:3000/track";
 async function fetchCurrentTrack() {
   try {
     const response = await fetch(API_URL);
@@ -9,19 +8,20 @@ async function fetchCurrentTrack() {
     const data = await response.json();
     const track = data.recenttracks.track[0];
 
-    if (track && track["@attr"] && track["@attr"].nowplaying) {
-      document.getElementById(
-        "track-name"
-      ).textContent = `Track Name: ${track.name}`;
-      document.getElementById(
-        "artist-name"
-      ).textContent = `Artist: ${track.artist["#text"]}`;
-      document.getElementById("album-cover").src = track.image[3]["#text"];
-    } else {
-      document.querySelector(".temp-main").style.display = "none";
-    }
+    console.log(track)
+    //if (track && track["@attr"] && track["@attr"].nowplaying) {
+    //  document.getElementById(
+    //    "track-name"
+    //  ).textContent = `Track Name: ${track.name}`;
+    //  document.getElementById(
+    //    "artist-name"
+    //  ).textContent = `Artist: ${track.artist["#text"]}`;
+    //  document.getElementById("album-cover").src = track.image[3]["#text"];
+    //} else {
+    //  document.querySelector(".temp-main").style.display = "none";
+    //}
   } catch (error) {
-    //document.querySelector(".temp-main").style.display = "none";
+    document.querySelector(".temp-main").style.display = "none";
     console.log(error);
   }
 }
