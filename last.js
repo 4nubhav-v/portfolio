@@ -21,7 +21,7 @@ async function fetchCurrentTrack() {
       document.querySelector(".temp-main").style.display = "none";
     }
   } catch (error) {
-    document.querySelector(".temp-main").style.display = "none";
+    //document.querySelector(".temp-main").style.display = "none";
     console.log(error);
   }
 }
