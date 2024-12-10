@@ -26,17 +26,17 @@ async function fetchCurrentTrack() {
   }
 }
 
-fetch(`https://4nubhav.vercel.app/api/info`)
-  .then((response) => response.json()) // Parse the JSON data from the response
-  .then((data) => {
-    let st1 = document.getElementById("info1").innerText;
-    let st2 = document.getElementById("info2").innerText;
-    st1 = `${st1} ${data.email}`;
-    st2 = `${st2} ${data.phoneNumber}`;
-    document.getElementById("info1").innerText = st1;
-    document.getElementById("info2").innerText = st2;
-  })
-  .catch((error) => console.error("Error fetching data:", error));
+//fetch(`https://4nubhav.vercel.app/api/info`)
+//  .then((response) => response.json()) // Parse the JSON data from the response
+//  .then((data) => {
+//    let st1 = document.getElementById("info1").innerText;
+//    let st2 = document.getElementById("info2").innerText;
+//    st1 = `${st1} ${data.email}`;
+//    st2 = `${st2} ${data.phoneNumber}`;
+//    document.getElementById("info1").innerText = st1;
+//    document.getElementById("info2").innerText = st2;
+//  })
+  //.catch((error) => console.error("Error fetching data:", error));
 
 // Fetch current track information on page load
 fetchCurrentTrack();
