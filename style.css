@@ -30,8 +30,8 @@ main p {
 }
 body {
   font-family: "Liberation Font", sans-serif;
-  color: rgb(236, 223, 204);
-  background: rgb(24, 28, 20);
+  color: #ebdbb2;
+  background: #282828;
   padding: 20px;
 }
 
@@ -48,7 +48,7 @@ body {
 }
 .main-content {
   max-width: 600px;
-  background: rgb(24, 28, 20);
+  background: #282828;
   border-radius: 8px;
   gap: 20px;
 }
@@ -145,7 +145,7 @@ footer {
   border-radius: 20px;
   margin: 20px;
   padding: 0px 40px 40px 40px;
-  width: 350px;
+  width: 237px;
   transition: 0.4s;
   position: relative;
   overflow: hidden;
@@ -175,7 +175,7 @@ button {
   transition: 0.3s;
 }
 #face-image {
-  width: 300px;
+  width: 237px;
   height: auto;
   margin: 20px;
   border-radius: 20px;
@@ -286,7 +286,7 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  border: 1px solid white;
+  border: 1px solid #ebdbb2;
   margin-right: 30px;
   padding: 12px;
   transition: 0.4s;
@@ -296,8 +296,8 @@ button {
   }
 }
 #socials-icons {
-  background: rgb(24, 28, 20);
-  border: 1px solid white;
+  background: #282828;
+  border: 1px solid #ebdbb2;
   border-radius: 50%;
   text-decoration: none;
   display: flex;
@@ -307,7 +307,7 @@ button {
   padding: 12px;
   transition: 0.4s;
   &:hover {
-    box-shadow: 0px 0px 20px rgb(236, 223, 204);
+    box-shadow: 0px 0px 20px #edbbb2;
   }
 }
 .socials2 {
@@ -348,7 +348,7 @@ button {
     display: none;
   }
   #face-image {
-    width: 200px;
+    width: 120px;
   }
   .socials2 {
     display: flex;
