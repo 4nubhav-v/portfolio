@@ -54,7 +54,7 @@ body {
 }
 .temp-main {
   padding: 20px;
-  background: rgb(24, 28, 20);
+  background: #282828;
 }
 
 header {
@@ -113,6 +113,7 @@ footer {
   padding: 20px;
 }
 #album-cover {
+  width: 237px;
   box-shadow: 0px 0px 20px rgb(236, 223, 204);
   border: 8px solid white;
   transition: 0.4s;
@@ -367,7 +368,7 @@ button {
     flex-direction: column;
   }
   #album-cover {
-    max-width: 250px;
+    max-width: 237px;
   }
   p {
     text-align: center;
