@@ -84,6 +84,7 @@ nav ul li {
 }
 
 nav ul li a {
+  font-size:;
   color: rgb(236, 223, 204);
   text-decoration: none;
   padding: 10px;
@@ -217,7 +218,7 @@ button {
   font-size: 15px;
 }
 #hi2 {
-  font-size: 18px;
+  font-size: 14px;
   font-family: "Liberation Font", sans-serif;
   padding: none;
   margin: none;
