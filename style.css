@@ -33,6 +33,8 @@ body {
   color: #ebdbb2;
   background: #282828;
   padding: 20px;
+  font-size: 14px;
+  height: 100vh;
 }
 
 .container {
@@ -84,7 +86,6 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size:;
   color: rgb(236, 223, 204);
   text-decoration: none;
   padding: 10px;
@@ -200,7 +201,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  font-size: 18px;
+  font-size: 14px;
   padding-left: 20px;
 }
 #hero .temp-main {
@@ -211,7 +212,7 @@ button {
   padding: 25px;
 }
 #hi {
-  font-size: 60px;
+  font-size: 40px;
   transition: 0.4s;
 }
 #hi1 {
@@ -277,6 +278,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: left;
+  width: 397px;
 }
 #cv {
   color: rgb(236, 223, 204);
