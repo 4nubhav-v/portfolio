@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Ioskeley Mono";
+  src: url(fonts/WOFF2/IoskeleyMono-Bold.woff2) format("truetype");
+}
 body {
   height: 100vh;
 }
