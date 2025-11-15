@@ -1,14 +1,8 @@
-**This is for my personal website [Click here to visit](https://4nubhav.vercel.app/)**
+**This is for my personal website [Click here to visit](https://4nubhav.codeberg.page)**
 
 # Anubhav's Personal Website
 
 Welcome to my personal website repository! This website serves as a portfolio, blog, and contact point. It's built with using HTML, CSS, Javascript and hosted on GitHub Pages.It showcases my projects, skills, and provides a way to get in touch with me. Feel free to explore and get to know more about my work and interests.
-
-
-## Screenshot
-
-![App Screenshot](https://github.com/4nubhav-v/4nubhav-v.github.io/blob/main/screenshot.png)
-
 
 ## Features
 
@@ -17,4 +11,4 @@ Welcome to my personal website repository! This website serves as a portfolio, b
 - **Contact Form**: Get in touch with me directly through the website.
 - **Responsive Design**: Optimized for various devices and screen sizes.
 
-This site was built using GitHub Pages and Vercel.
+This site was built using Codeberg Pages [Docus](https://docs.codeberg.org/codeberg-pages/)
