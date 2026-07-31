@@ -1,21 +1,19 @@
+"use client";
 import Image from "next/image";
-import Navbar from "../Navbar/Navbar";
+import Heading from "./Heading";
 import TechBadge from "./TechBadge";
 
 function Hero() {
   return (
     <section className="bg-white dark:bg-black">
       <div className="relative h-screen">
-        <Navbar />
         <div className="absolute inset-y-0 left-32 h-full w-px bg-linear-to-b from-neutral-50/20 to-[#311872]/20" />
         <div className="absolute inset-y-0 right-32 h-full w-px bg-linear-to-b from-neutral-50/20 to-[#311872]/20" />
         <div className="absolute inset-x-0 top-32 h-px w-full bg-linear-to-b from-neutral-50/20 to-[#311872]/20" />
-        <div className="mx-auto flex h-screen max-w-7xl flex-col px-4 py-2">
-          <div className="flex flex-1 items-center justify-center">
-            <div className="flex flex-col">
-              <h1 className="mb-4 max-w-2xl text-4xl leading-none font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white">
-                Hello, This is me Anubhav.
-              </h1>
+        <div className="mx-auto flex h-screen max-w-7xl flex-col items-center justify-center px-4 py-2">
+          <div className="flex items-center justify-center">
+            <div className="m-4 flex flex-col p-4">
+              <Heading />
               <p className="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl dark:text-gray-400">
                 I am a software developer with a passion for web development. I
                 have a background in computer science and mathematics, and I
@@ -25,11 +23,13 @@ function Hero() {
               </p>
 
               <div className="flex gap-4">
-                <button className="rounded-sm bg-white px-4 py-2 text-black">
-                  Contact
+                <button className="cursor-pointer rounded-sm bg-white px-4 py-2 text-black">
+                  <a href="#contacts">Contact</a>
                 </button>
-                <button className="rounded-sm bg-none px-4 py-2 text-black outline-1 dark:text-white dark:outline-neutral-50">
-                  View CV
+                <button className="cursor-pointer rounded-sm bg-none px-4 py-2 text-black outline-1 dark:text-white dark:outline-neutral-50">
+                  <a href="/resume/myResume.pdf" target="_blank">
+                    View CV
+                  </a>
                 </button>
               </div>
               <TechBadge />

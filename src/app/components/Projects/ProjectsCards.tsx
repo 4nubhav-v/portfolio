@@ -1,9 +1,16 @@
-import React from "react";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
+type ProjectInter = {
+  title: string;
+  imgUrl: string;
+  description: string;
+  github: string;
+  liveurl: string;
+  status: React.ReactNode;
+};
 
 function Projects() {
-  const projects = [
+  const projects: ProjectInter[] = [
     {
       title: "Weather app",
       imgUrl: "/Projects/Screenshot 2026-07-25 at 14-35-03 Create Next App.png",
