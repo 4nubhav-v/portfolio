@@ -9,12 +9,11 @@ import Footer from "./components/Footer/Footer";
 export default function Home() {
   return (
     <>
-      <div className="relative selection:bg-black selection:text-white dark:selection:bg-black dark:selection:text-white">
+      <div className="bg-gb-bg-light relative selection:bg-black selection:text-white dark:bg-black dark:selection:bg-white dark:selection:text-black">
         <Navbar />
         <Hero />
         <Education />
         <Projects />
-        <Blogs />
         <Contact />
         <Footer />
       </div>

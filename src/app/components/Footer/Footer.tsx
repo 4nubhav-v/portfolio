@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 function Footer() {
   return (
-    <footer className="relative bottom-0 mb-4 h-24 w-screen">
+    <footer className="bg-gb-bg-light relative bottom-0 mb-4 h-24 w-screen dark:bg-black">
       <motion.div
         initial={{ scale: 0 }}
         transition={{ delay: 0.3, duration: 0.5 }}

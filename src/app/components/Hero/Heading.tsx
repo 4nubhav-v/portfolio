@@ -29,7 +29,7 @@ function Heading() {
           <motion.span
             key={index}
             variants={items}
-            className="pr-2 leading-none font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white"
+            className="pr-2 text-3xl leading-none font-extrabold tracking-tight [text-shadow:0_4px_8px_rgba(0_0_0/0.2)] sm:text-4xl xl:text-6xl dark:text-white dark:[text-shadow:0_4px_8px_rgba(255_255_255/0.4)]"
           >
             {x}
           </motion.span>

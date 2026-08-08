@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 type ProjectInter = {
   title: string;
   imgUrl: string;
@@ -64,7 +65,10 @@ function Projects() {
     <>
       {projects.map((project, index) => {
         return (
-          <div className="col-span-1 rounded-xl bg-neutral-400" key={index}>
+          <div
+            className="col-span-full rounded-xl bg-neutral-800 md:col-span-1"
+            key={index}
+          >
             <Image
               width={800}
               height={400}
@@ -81,18 +85,22 @@ function Projects() {
               </div>
               <p> {project.description}</p>
               <div className="m-2 grid grid-cols-2 gap-4 p-4">
-                <a
-                  className="rounded-sm bg-white p-2 text-center text-black"
+                <Link
                   href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer rounded-sm bg-white p-2 text-center text-black shadow-neutral-300 transition-shadow duration-300 ease-in-out hover:shadow-sm"
                 >
                   Github
-                </a>
-                <a
-                  className="rounded-sm bg-white p-2 text-center text-black"
+                </Link>
+                <Link
                   href={project.liveurl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer rounded-sm bg-white p-2 text-center text-black shadow-neutral-300 transition-shadow duration-300 ease-in-out hover:shadow-sm"
                 >
                   Live
-                </a>
+                </Link>
               </div>
             </div>
           </div>
