@@ -41,7 +41,7 @@ function Hero() {
               width={300}
               height={300}
               loading="eager"
-              src="/test.jpg"
+              src="/test2.jpg"
               alt="my profile picture"
               className="rounded-sm"
               sizes="(max-width: 400px) 100vw, (max-width: 800px) 150vw, 00px"
