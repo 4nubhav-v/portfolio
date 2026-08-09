@@ -49,7 +49,7 @@ function Navbar() {
         opacity: hidden ? 0 : 1,
       }}
       transition={{ duration: 0.3 }}
-      className="sticky top-4 z-10 mx-auto flex h-14 w-full max-w-7xl items-center rounded-4xl bg-black/40 px-2 py-4 backdrop-blur-sm dark:bg-white/80"
+      className="sm:w- absolute inset-x-0 top-4 z-10 mx-auto flex h-14 w-96 items-center rounded-4xl bg-black/40 px-2 py-4 backdrop-blur-sm sm:w-xl md:w-2xl md:max-w-7xl dark:bg-white/80"
     >
       <nav className="grid w-full grid-cols-2">
         <div className="flex items-center justify-start gap-x-4 px-4">

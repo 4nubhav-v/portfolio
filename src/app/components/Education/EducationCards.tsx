@@ -4,7 +4,7 @@ import PulseConnector from "./PulseConnector";
 function EducationCards() {
   return (
     <div className="flex flex-col items-center">
-      <div className="dark:bg-neutral-800:w w-2xl rounded-xl bg-none p-4 outline-1">
+      <div className="w-2xl rounded-xl bg-none p-4 outline-1 dark:bg-neutral-800">
         <h2 className="text-2xl font-semibold tracking-tight">
           Manipul University, Jaipur
         </h2>
