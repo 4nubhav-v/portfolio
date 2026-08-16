@@ -66,7 +66,7 @@ function Projects() {
       {projects.map((project, index) => {
         return (
           <div
-            className="col-span-full rounded-xl bg-neutral-800 md:col-span-1"
+            className="col-span-full overflow-hidden rounded-xl bg-[#d9d2b6] shadow-xl md:col-span-1 dark:bg-neutral-800"
             key={index}
           >
             <Image

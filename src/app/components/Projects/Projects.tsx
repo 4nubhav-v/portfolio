@@ -20,17 +20,15 @@ function Projects() {
         whileInView={{ scale: 1 }}
         className="absolute right-32 hidden h-full w-px bg-black bg-[linear-gradient(0deg,rgba(0,0,0,1)_0%,rgba(181,181,181,1)_53%,rgba(0,0,0,1)_100%)] 2xl:inline"
       />
-      <div className="mx-auto max-w-7xl px-8 py-4">
-        <div>
-          <h1
-            className="mb-36 text-center text-7xl font-bold tracking-tight [text-shadow:0_4px_8px_rgba(0_0_0/0.2)] dark:[text-shadow:0_4px_8px_rgba(255_255_255/0.4)]"
-            id="project"
-          >
-            Projects
-          </h1>
-          <div className="grid grid-cols-3 gap-4">
-            <ProjectsCards />
-          </div>
+      <div className="mx-auto h-24 max-w-7xl px-8 py-4">
+        <h1
+          className="mb-36 text-center text-7xl font-bold tracking-tight [text-shadow:0_4px_8px_rgba(0_0_0/0.2)] dark:[text-shadow:0_4px_8px_rgba(255_255_255/0.4)]"
+          id="project"
+        >
+          Projects
+        </h1>
+        <div className="grid grid-cols-3 gap-4">
+          <ProjectsCards />
         </div>
       </div>
     </div>
