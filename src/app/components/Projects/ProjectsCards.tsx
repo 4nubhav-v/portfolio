@@ -66,7 +66,7 @@ function Projects() {
       {projects.map((project, index) => {
         return (
           <div
-            className="col-span-full overflow-hidden rounded-xl bg-[#d9d2b6] shadow-xl md:col-span-1 dark:bg-neutral-800"
+            className="col-span-full mx-auto overflow-hidden rounded-xl bg-[#d9d2b6] shadow-xl lg:col-span-1 dark:bg-neutral-800"
             key={index}
           >
             <Image
@@ -75,10 +75,12 @@ function Projects() {
               loading="eager"
               src={project.imgUrl}
               alt="project screenshot"
+              sizes="(max-width: 400px) 400px, 800px"
+              className="h-auto w-full max-w-100 sm:max-w-200"
             />
             <div className="p-4">
               <div className="flex justify-between">
-                <h2 className="text-2xl font-semibold tracking-tight">
+                <h2 className="text-xl font-semibold tracking-tight sm:text-2xl">
                   {project.title}
                 </h2>
                 {project.status}

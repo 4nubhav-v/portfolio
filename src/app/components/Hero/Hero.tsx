@@ -17,16 +17,18 @@ function Hero() {
           <div className="m-4 flex flex-col p-4">
             <Heading />
             <p className="mb-6 font-light text-gray-500 md:max-w-2xl md:text-lg lg:mb-8 lg:text-xl dark:text-gray-400">
-              I am a software developer with a passion for web development. I
-              have a background in computer science and mathematics, and I have
-              a strong interest in the intersection of technology and art. I am
-              currently completed my Bachlors&apos;s Degree in Computer Science
-              I am currently looking for a job.
+              I am a self learned Frontend developer with a passion for web
+              development. I have a background in computer science and
+              mathematics, and I have a strong interest in the technology &
+              history literature. If u wanna contact, U can click the contact
+              button here :)
             </p>
 
             <div className="flex gap-4">
-              <button className="cursor-pointer rounded-sm bg-black px-4 py-2 text-white outline-1 outline-neutral-50 dark:bg-white dark:text-black">
-                <a href="#contacts">Contact</a>
+              <button className="cursor-help rounded-sm bg-black px-4 py-2 text-white outline-1 outline-neutral-50 dark:bg-white dark:text-black">
+                <a href="#contacts" className="cursor-help">
+                  Contact
+                </a>
               </button>
               <button className="cursor-pointer rounded-sm bg-none px-4 py-2 text-black outline-1 dark:text-white dark:outline-neutral-50">
                 <a href="/resume/myResume.pdf" target="_blank">

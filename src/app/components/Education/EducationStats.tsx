@@ -12,7 +12,7 @@ function EducationStats({
   status = "",
 }: educationInterface) {
   return (
-    <div className="rounded-xl bg-none p-3 outline-1 sm:max-w-2xl md:w-4xl md:p-4 dark:bg-neutral-800">
+    <div className="w-sm rounded-xl bg-none p-3 outline-1 sm:max-w-2xl lg:w-4xl dark:bg-neutral-800">
       <h2 className="font-semibold tracking-tight sm:text-xl md:text-2xl">
         {school}
       </h2>

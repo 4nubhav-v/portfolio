@@ -4,7 +4,7 @@ import PulseConnector from "./PulseConnector";
 function Education() {
   return (
     <div
-      className="bg-gb-bg-light relative h-screen dark:bg-black"
+      className="bg-gb-bg-light relative min-h-screen dark:bg-black"
       id="education"
     >
       <div className="mx-auto mb-16 max-w-7xl px-8 py-4">
