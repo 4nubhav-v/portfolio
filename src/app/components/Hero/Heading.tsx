@@ -3,7 +3,7 @@ import React from "react";
 import { motion, stagger } from "motion/react";
 
 function Heading() {
-  const headingTitle = ["Hello,", "This", "is", "me", "Anubhav"];
+  const headingTitle = ["Hi,", "This", "is", "me", "Anubhav"];
   const headingShow = {
     hidden: { opacity: 0 },
     show: {

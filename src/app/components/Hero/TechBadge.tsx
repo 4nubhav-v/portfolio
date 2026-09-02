@@ -5,6 +5,7 @@ import StackIcon from "tech-stack-icons";
 import {
   Tooltip,
   TooltipContent,
+  TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
@@ -21,22 +22,24 @@ function TechBadge() {
   const { theme } = useTheme();
   return (
     <div className="mt-4 flex h-12 w-56 items-center gap-2">
-      {techicons.map((tech, index) => {
-        return (
-          <Tooltip key={index}>
-            <TooltipTrigger>
-              <StackIcon
-                className="py-2"
-                variant={theme === "dark" ? "dark" : "light"}
-                name={tech.icon}
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>{tech.title}</p>
-            </TooltipContent>
-          </Tooltip>
-        );
-      })}
+      <TooltipProvider>
+        {techicons.map((tech, index) => {
+          return (
+            <Tooltip key={index}>
+              <TooltipTrigger>
+                <StackIcon
+                  className="py-2"
+                  variant={theme === "dark" ? "dark" : "light"}
+                  name={tech.icon}
+                />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>{tech.title}</p>
+              </TooltipContent>
+            </Tooltip>
+          );
+        })}
+      </TooltipProvider>
     </div>
   );
 }

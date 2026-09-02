@@ -32,7 +32,13 @@ function Navbar() {
       href: "#projects",
       icons: <ChartNoAxesGantt />,
     },
-    { id: 3, title: "Contact", href: "#contact", icons: <Mail /> },
+    {
+      id: 3,
+      title: "Blogs",
+      href: "https://4nubhav-v.github.io",
+      icons: <BookOpenText />,
+    },
+    { id: 4, title: "Contact", href: "#contact", icons: <Mail /> },
   ];
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
@@ -115,11 +121,8 @@ function Navbar() {
             className="flex cursor-pointer items-center font-semibold text-white dark:text-black"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
-            {theme === "dark" ? (
-              <Sun className="h-6 w-6" />
-            ) : (
-              <Moon className="h-6 w-6" />
-            )}
+            <Sun className="block h-6 w-6 dark:hidden" />
+            <Moon className="hidden h-6 w-6 dark:block" />
           </button>
         </div>
       </nav>
