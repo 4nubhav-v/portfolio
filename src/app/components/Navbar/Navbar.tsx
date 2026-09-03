@@ -111,11 +111,20 @@ function Navbar() {
 
         <div className="flex cursor-pointer items-center justify-end gap-x-4 px-4">
           <a href="https://github.com/4nubhav-v">
-            <StackIcon
-              className="mt-1 h-6 w-6"
-              name="github"
-              variant={theme === "dark" ? "light" : "dark"}
-            />
+            <span className="block dark:hidden">
+              <StackIcon
+                className="mt-1 h-6 w-6"
+                name="github"
+                variant="dark"
+              />
+            </span>
+            <span className="hidden dark:block">
+              <StackIcon
+                className="mt-1 h-6 w-6"
+                name="github"
+                variant="light"
+              />
+            </span>
           </a>
           <button
             className="flex cursor-pointer items-center font-semibold text-white dark:text-black"

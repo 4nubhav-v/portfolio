@@ -1,6 +1,4 @@
 import React from "react";
-import { useTheme } from "next-themes";
-
 import StackIcon from "tech-stack-icons";
 import {
   Tooltip,
@@ -19,7 +17,6 @@ function TechBadge() {
     { title: "Vite", icon: "vitejs" },
     { title: "Next.js", icon: "nextjs2" },
   ];
-  const { theme } = useTheme();
   return (
     <div className="mt-4 flex h-12 w-56 items-center gap-2">
       <TooltipProvider>
@@ -27,11 +24,16 @@ function TechBadge() {
           return (
             <Tooltip key={index}>
               <TooltipTrigger>
-                <StackIcon
-                  className="py-2"
-                  variant={theme === "dark" ? "dark" : "light"}
-                  name={tech.icon}
-                />
+                <span className="inline dark:hidden">
+                  <StackIcon
+                    className="py-2"
+                    variant="light"
+                    name={tech.icon}
+                  />
+                </span>
+                <span className="hidden dark:inline">
+                  <StackIcon className="py-2" variant="dark" name={tech.icon} />
+                </span>
               </TooltipTrigger>
               <TooltipContent>
                 <p>{tech.title}</p>
