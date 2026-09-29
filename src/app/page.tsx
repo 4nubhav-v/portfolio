@@ -1,7 +1,7 @@
 "use client";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import Education from "./components/Education/Education";
+import EducationTimelineDemo from "./components/Education/EducationTimelineDemo";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contacts/Contact";
 import Footer from "./components/Footer/Footer";
@@ -18,7 +18,7 @@ export default function Home() {
         ></motion.div>
         <Navbar />
         <Hero />
-        <Education />
+        <EducationTimelineDemo />
         <Projects />
         <Contact />
         <Footer />
