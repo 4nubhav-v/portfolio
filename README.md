@@ -9,7 +9,7 @@
 - [ ] Redsign of Contact Page for more like image Animated like if the use should
       move near to the contact button
       so the bg hands should animate to move closer.
-      ![education & projects]('/ideas/Drawing 2026-09-29 11.50.24.excalidraw.png')
+      ![education & projects]('ideas/Drawing 2026-09-29 11.50.24.excalidraw.png')
 - [ ] Work on Typograghy of the site.
 - [ ] Change the footer to copyrights.
 - [ ] Redesign the hamburger menu in for the mobile port view.
